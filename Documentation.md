@@ -1,26 +1,26 @@
 # Documentation
  
- ## Tipos de usuario del sistema
- - Empresas
- - Importadores
+ ## System User Types
+- Companies
+- Importers
  
  ## Features
- F01 - Register in the application – User: Importer
- F02 - Log in to the application – User: Importer
- F03 - Create a new cargo request for their merchandise – User: Importer
- F04 - Check pending requests – User: Importer
- F05 - Cancel a cargo request – User: Importer
- F06 - View statistical information – User: Importer
- F06.1 - See the percentage of cancellations against the total cargo requests – User: Importer
- F06.2 - View the calendar of upcoming arrivals with their imported cargo, sorted by arrival order in Montevideo – User: Importer
- F06.3 - See the participation of different cargo lines in their requests – User: Importer
- F07 - Log in to the application – User: Company
- F08 - Create a ship voyage – User: Company
- F09 - Assign a pending cargo request to a ship voyage bound for Montevideo – User: Company
- F10 - Cargo rollover – User: Company
- F11 - Cargo Manifest – User: Company
- F12 - Enable disabled importers – User: Company
- F13 - Dangerous cargo list – User: Company
+- F01 - Register in the application – User: Importer
+- F02 - Log in to the application – User: Importer
+- F03 - Create a new update request for their merchandise – User: Importer
+-  F04 - Check pending requests – User: Importer
+- F05 - Cancel a update request – User: Importer
+- F06 - View statistical information – User: Importer
+- F06.1 - See the percentage of cancellations against the total update requests – User: Importer
+- F06.2 - View the calendar of upcoming arrivals with their imported update, sorted by arrival order in Montevideo – User: Importer
+- F06.3 - See the participation of different update lines in their requests – User: Importer
+- F07 - Log in to the application – User: Company
+- F08 - Create a ship voyage – User: Company
+- F09 - Assign a pending update request to a ship voyage bound for Montevideo – User: Company
+- F10 - update rollover – User: Company
+- F11 - update Manifest – User: Company
+- F12 - Enable disabled importers – User: Company
+- F13 - Dangerous update list – User: Company
  
  ## Feature Details
  
@@ -56,23 +56,23 @@
  
  - If an error occurs, an alert message will be displayed.
  
- ### F03 - Create a new cargo request for their merchandise
+ ### F03 - Create a new update request for their merchandise
  Access: Importer
  
  Description:
- - The user must enter the cargo details.
+ - The user must enter the update details.
  
  Validations:
  
- - The type of cargo must be selected:
+ - The type of update must be selected:
  
- GENERAL CARGO
+ GENERAL update
  
  REFRIGERATED
  
- DANGEROUS CARGO
+ DANGEROUS update
  
- - A description of the cargo must be entered.
+ - A description of the update must be entered.
  
  - The origin port must match a preloaded port.
  
@@ -82,31 +82,31 @@
  
  - All fields must be completed. If any field is missing, an alert message will be displayed.
  
- - An alert will notify the user that the cargo request is pending confirmation once submitted.
+ - An alert will notify the user that the update request is pending confirmation once submitted.
  
  ### F04 - Check pending requests
  Access: Importer
  
  Description:
  
- - The user must enter the cargo details.
+ - The user must enter the update details.
  
  Validations:
  
  - The user can check their pending requests.
  
- - A partial search can be performed using the cargo description (case insensitive).
+ - A partial search can be performed using the update description (case insensitive).
  
  - The displayed results will be filtered. If no results are found, a message will be displayed.
  
  - If the request has been accepted, it will display an auto-generated request ID.
  
- ### F05 - Cancel a cargo request
+ ### F05 - Cancel a update request
  Access: Importer
  
  Description:
  
- - The user can cancel the cargo shipment.
+ - The user can cancel the update shipment.
  
  Validations:
  
@@ -119,7 +119,7 @@
  ### F06 - View statistical information
  Access: Importer
  
- #### F06.1 - View the percentage of cancellations against total cargo requests
+ #### F06.1 - View the percentage of cancellations against total update requests
  Access: Importer
  
  Description:
@@ -128,9 +128,9 @@
  
  Validations:
  
- - The total number of cancellations must be calculated and compared to the total number of cargo requests.
+ - The total number of cancellations must be calculated and compared to the total number of update requests.
  
- #### F06.2 - View the calendar of upcoming arrivals with imported cargo sorted by arrival order in Montevideo
+ #### F06.2 - View the calendar of upcoming arrivals with imported update sorted by arrival order in Montevideo
  Access: Importer
  
  Description:
@@ -141,7 +141,7 @@
  
  - The data of the next arrivals will be loaded in order of arrival.
  
- #### F06.3 - View the participation of different cargo lines in requests
+ #### F06.3 - View the participation of different update lines in requests
  Access: Importer
  
  Description:
@@ -174,7 +174,7 @@
  
  Description:
  
- - A new cargo ship voyage can be created.
+ - A new update ship voyage can be created.
  
  Validations:
  
@@ -188,50 +188,50 @@
  
  - An auto-generated voyage ID will be assigned.
  
- ### F09 - Assign a pending cargo request to a ship voyage bound for Montevideo
+ ### F09 - Assign a pending update request to a ship voyage bound for Montevideo
  Access: Company
  
  Description:
  
- - Associate a pending cargo request with an available ship.
+ - Associate a pending update request with an available ship.
  
  Validations:
  
  - The voyage must be selected.
  
- - Cargo can only be assigned if the ship has available space and the importer is authorized.
+ - update can only be assigned if the ship has available space and the importer is authorized.
  
- - All approved cargo loads for the ship must be verified.
+ - All approved update loads for the ship must be verified.
  
  - The voyage must be selected from a dropdown list.
  
- - The cargo request status will automatically change to "CONFIRMED," and the voyage ID will be linked to the request.
+ - The update request status will automatically change to "CONFIRMED," and the voyage ID will be linked to the request.
  
- ### F10 - Cargo rollover
+ ### F10 - update rollover
  Access: Company
  
  Description:
  
- - Transfer cargo between ships.
+ - Transfer update between ships.
  
  Validations:
  
  - If a request is initially confirmed but cannot be loaded, it will be transferred to another ship.
  
- - The transfer must include all cargo for the requester, so the new ship must have sufficient space for all items.
+ - The transfer must include all update for the requester, so the new ship must have sufficient space for all items.
  
- ### F11 - Cargo Manifest
+ ### F11 - update Manifest
  Access: Company
  
  Description:
  
- - A detailed list of the ship's cargo.
+ - A detailed list of the ship's update.
  
  Validations:
  
- - The corresponding company must generate a list of the cargo for each voyage.
+ - The corresponding company must generate a list of the update for each voyage.
  
- - The manifest will include cargo details such as the origin port, number of containers, importer name, cargo description, and type.
+ - The manifest will include update details such as the origin port, number of containers, importer name, update description, and type.
  
  - The voyage must be selected from a dropdown list to generate the manifest.
  
@@ -246,15 +246,15 @@
  
  - A rule of three will be applied, where canceled reservations will be converted to ignored so that the rule is no longer met.
  
- F13 - Dangerous cargo list
+ F13 - Dangerous update list
  Access: Company
  
  Description:
  
- - List of dangerous cargo on the ship.
+ - List of dangerous update on the ship.
  
  Validations:
  
- - An automatic list of the ship's dangerous cargo will be generated for submission to port authorities.
+ - An automatic list of the ship's dangerous update will be generated for submission to port authorities.
  
- - The "Verify Dangerous Cargo" option must be selected within the Cargo Manifest.
+ - The "Verify Dangerous update" option must be selected within the update Manifest.
