@@ -5,14 +5,14 @@
 - Importers
  
  ## Features
-- F01 - Register in the application – User: Importer
+- F01 - Register on the application – User: Importer
 - F02 - Log in to the application – User: Importer
-- F03 - Create a new cargo request for their merchandise – User: Importer
--  F04 - Check pending requests – User: Importer
+- F03 - Create a new cargo request for the merchandise – User: Importer
+- F04 - Check pending requests – User: Importer
 - F05 - Cancel a cargo request – User: Importer
 - F06 - View statistical information – User: Importer
 - F06.1 - See the percentage of cancellations against the total cargo requests – User: Importer
-- F06.2 - View the calendar of upcoming arrivals with their imported cargo, sorted by arrival order in Montevideo – User: Importer
+- F06.2 - View the calendar of upcoming arrivals with their imported cargo, sorted by arrival order to Montevideo – User: Importer
 - F06.3 - See the participation of different cargo lines in their requests – User: Importer
 - F07 - Log in to the application – User: Company
 - F08 - Create a ship voyage – User: Company
@@ -24,12 +24,12 @@
  
  ## Feature Details
  
- ### F01 - Register in the application
+ ### F01 - Register on the application
  Access: Importer
  
  Description:
  
- - The user must enter the required data to register in the application.
+ - The user must enter the required data to register on the application.
  
  Validations:
  
@@ -39,7 +39,7 @@
  
  - All fields must be completed.
  
- - If an error occurs, an alert message will be displayed
+ - If an error occurs, an alert message will be displayed.
  
  ### F02 - Log in to the application
  Access: Importer
@@ -56,7 +56,7 @@
  
  - If an error occurs, an alert message will be displayed.
  
- ### F03 - Create a new cargo request for their merchandise
+ ### F03 - Create a new cargo request for the merchandise
  Access: Importer
  
  Description:
@@ -74,7 +74,7 @@
  
  - A description of the cargo must be entered.
  
- - The origin port must match a preloaded port.
+ - The port of origin must match a preloaded port.
  
  - The number of containers must be specified.
  
@@ -110,11 +110,11 @@
  
  Validations:
  
- - A request can only be canceled if it has not yet been confirmed.
+ - A request can only be cancelled if it has not yet been confirmed.
  
  - If the user cancels more than three requests, they will be blocked.
  
- - The "Cancel" button will be active if the request status is "Pending." Once clicked, the status will change to "Canceled."
+ - The "Cancel" button will be active if the request status is "Pending." Once clicked, the status will change to "Cancelled."
  
  ### F06 - View statistical information
  Access: Importer
@@ -124,13 +124,13 @@
  
  Description:
  
- - The percentage of canceled requests will be displayed.
+ - The percentage of cancelled requests will be displayed.
  
  Validations:
  
  - The total number of cancellations must be calculated and compared to the total number of cargo requests.
  
- #### F06.2 - View the calendar of upcoming arrivals with imported cargo sorted by arrival order in Montevideo
+ #### F06.2 - View the calendar of upcoming arrivals with imported cargo sorted by arrival order to Montevideo
  Access: Importer
  
  Description:
@@ -199,7 +199,7 @@
  
  - The voyage must be selected.
  
- - cargo can only be assigned if the ship has available space and the importer is authorized.
+ - Cargo can only be assigned if the ship has available space and the importer is authorized.
  
  - All approved cargo loads for the ship must be verified.
  
@@ -207,7 +207,7 @@
  
  - The cargo request status will automatically change to "CONFIRMED," and the voyage ID will be linked to the request.
  
- ### F10 - cargo rollover
+ ### F10 - Cargo Rollover
  Access: Company
  
  Description:
@@ -220,7 +220,7 @@
  
  - The transfer must include all cargo for the requester, so the new ship must have sufficient space for all items.
  
- ### F11 - cargo Manifest
+ ### F11 - Cargo Manifest
  Access: Company
  
  Description:
@@ -231,11 +231,11 @@
  
  - The corresponding company must generate a list of the cargo for each voyage.
  
- - The manifest will include cargo details such as the origin port, number of containers, importer name, cargo description, and type.
+ - The manifest will include cargo details such as the port origin, number of containers, importer name, cargo description and type.
  
  - The voyage must be selected from a dropdown list to generate the manifest.
  
- ### F12 - Enable disabled importers
+ ### F12 - Enable/Disabled Importers
  Access: Company
  
  Description:
@@ -246,7 +246,7 @@
  
  - A rule of three will be applied, where canceled reservations will be converted to ignored so that the rule is no longer met.
  
- F13 - Dangerous cargo list
+### F13 - Dangerous Cargo List
  Access: Company
  
  Description:
