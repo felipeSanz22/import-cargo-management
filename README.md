@@ -4,7 +4,7 @@
 
 This project was developed as part of the Information Technology Analyst program at ORT Uruguay University, during the Programming 1 course. It was built in collaboration with a classmate.
 
-The system is designed to manage import cargo in containers arriving in Uruguay on cargo ships. It provides functionalities for both importers and shipping companies, enabling them to:
+The system is designed to manage import cargo in containers arriving to Uruguay on cargo ships. It provides functionalities for both importers and shipping companies, enabling them to:
 
 - Register and log in as an importer or a shipping company.
 - Submit and track cargo requests for importers.
